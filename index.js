@@ -158,7 +158,7 @@ function displayJson(stuff){
 }
 function saveToPlayList(songName,req,res){
 	
-	spotifyApi.addTracksToPlaylist('4nOL2JonWaLX9EI8XjcqAI', [songName])
+	spotifyApi.addTracksToPlaylist('', [songName])
   .then(function(data) {
     res.send("Song has been added!")
   }, function(err) {
@@ -169,7 +169,7 @@ function saveToPlayList(songName,req,res){
 }
 function ShowPlaylist(req,res){
 	
-spotifyApi.getPlaylist('4nOL2JonWaLX9EI8XjcqAI')
+spotifyApi.getPlaylist('')
 
   .then(function(data) {
     //console.log('Some information about this playlist', data.body);
