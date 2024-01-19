@@ -16,8 +16,8 @@ app.use('/static', express.static('public'))
 
 // Initialize the Spotify API with credentials from environment variables.
 const spotifyApi = new SpotifyWebApi({
-    clientId:'147960f3b609435caeb2c038d3159524',
-    clientSecret: 'c49207f4b07b47ffac8b2c5fc05b8a4b',
+    clientId:'',
+    clientSecret: '',
     redirectUri: "http://localhost:3050/callback"
 });
 app.get('/',(req,res)=>{
