@@ -1,0 +1,29 @@
+.younow{
+	color:#BD00FF;
+	font-family: 'Exo 2', sans-serif;
+	font-family: 'Pangolin', cursive;
+	text-align:left;
+	padding-top:20px;
+	border-radius:5px;
+	padding-bottom:10px;
+}
+.kick{
+	color:#39FF14;
+	font-family: 'Exo 2', sans-serif;
+	font-family: 'Pangolin', cursive;
+	text-align:left;
+	padding-top:20px;
+	border-radius:5px;
+	padding-bottom:10px;
+}
+
+.badge2 {
+    width: 25px;
+    height: 25px;
+    margin-right: 2px;
+    margin-bottom: 3px;
+    vertical-align: middle;
+    border-radius: 10%;
+	padding-right:4px;
+	
+}

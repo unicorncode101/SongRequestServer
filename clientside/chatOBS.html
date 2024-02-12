@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<!-- 
+Fix on YN 
+username green with stickers are dropped 
+
+
+//-->
+<meta charset="utf-8" />
+     <head>
+        <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DynaPuff&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+<link  rel="stylesheet" type="text/css" href="styles.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="singlecss.css"/>
+<link rel="stylesheet" type="text/css" href="custom.css"/>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DynaPuff&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100&family=Pangolin&display=swap" rel="stylesheet">
+
+
+<script src="https://js.pusher.com/2.2/pusher.min.js"> </script> 
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<style>
+.sp2{
+font-family: 'Abril Fatface', cursive;
+font-family: 'DynaPuff', cursive;
+font-size:42;
+color:green;
+}
+
+
+.msg{
+padding:12;font-size:15; letter-spacing:0.5 ; font-weight:500; 
+font-family: 'Russo One', sans-serif;
+font-color:'#d3d3d3';
+
+}
+</style>
+<script>
+
+ // two version of the chat for the obs version cut off at  "A" 
+ 
+var ScrollingDown =true;  
+ let head = document.getElementsByTagName('HEAD')[0];
+	let link = document.createElement('link');
+ 
+        // set the attributes for link element
+        link.rel = 'stylesheet';
+     
+        link.type = 'text/css';
+				 
+		link.href='default.css';
+		
+	link.href='default.css';	
+	head.appendChild(link); 
+	
+	
+
+
+</script> 
+</head>
+
+
+<body  onload="displayChat();"> 
+	
+
+<div class="chatwindow" id="chatWindow" style="overflow-y:hidden;overflow-x: hidden;">
+
+  <div id="chat" class="chat" style="">
+	<div class="younow">Test 123. Hello world!!!  Testing a very long line 123 321 </div>
+	<div class="msg"></div>
+	<div class="msg"></div>
+	</div>
+	<br>
+	
+<div style="position:absolute;align:center;left:40%;bottom:-11px;">
+	<button id="btnScroll" onclick="disableScroll();">Disable Scroll</button>
+	</div>
+</div>  
+	
+
+
+
+   <script>
+
+function gotoTop()
+{
+	//window.alert("scrolling");
+	//var el3 =   document.getElementById("chat") ;
+	// el3.scrollTop =el3.Height();
+	
+	
+
+}
+
+var mybutton = document.getElementById("myBtn");
+
+var chatview = document.getElementById("chat")
+function StartChatKick(){
+var kick_id = 460187; //roxxies 
+kick_id=1667541;
+
+
+if(kick_id >0){
+main(kick_id);
+document.getElementById("menu").style.display = "none";
+document.getElementById("MainWindow").style.visibility= "visible";
+
+}
+else
+{
+alert("Missing a user id"); 
+}
+}
+</script> 
+<script src="KickChatScript.js"> </script> 
+<script src="yn.js"></script>
+	
+	
+
+	<script>
+function disableScroll(){
+var btnSc =   document.getElementById("btnScroll");
+
+if(ScrollingDown !=true){
+ScrollingDown =true;
+btnSc.value="Disable Scrolling"
+btnSc.innerText="Disable Scrolling";
+}
+else{
+ScrollingDown =false;
+btnSc.value="Enable Scrolling"
+btnSc.innerText="Enable Scrolling";
+}
+
+}	
+	</script> 
+
+</body>
+	</html>

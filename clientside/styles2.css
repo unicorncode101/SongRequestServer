@@ -1,0 +1,150 @@
+
+
+.wrappper {
+  width: 70%;
+  margin: 0 auto;
+}
+
+canvas {
+  color: white;
+  border: white dashed 2px;
+  padding: 15px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: 5px 0;
+}
+h1 {
+  font-size: 2.6em;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.buttons2 {
+  background: transparent;
+  border-radius: 5px;
+  border: solid 1px white;
+  color: white;
+  width: 45px;
+  height: 45px;
+  margin: 0 10px 10px 0;
+  outline: none;
+  font-size:25px;
+  
+}
+.button2:hover {
+  transition: 0.5s;
+  background: white;
+  border: solid 1px white;
+  color: #c1d72e;
+}
+
+.selected {
+  background: white;
+  border: solid 1px white;
+  color: red;
+}
+
+.btn-2 {
+  border-radius: 10px;
+  background: #c1d72e;
+  color: white;
+  border: solid 1px white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 10px 10px;
+  width: 180px;
+  height: 50px;
+  margin: 0 10px 10px 0;
+
+  outline: none;
+}
+.btn-2:hover {
+  transition: 0.5s;
+  background: white;
+  border: solid 1px white;
+  color: #c1d72e;
+}
+
+#card {
+	left:20px;
+	width:250px;
+	padding: 30px 20px;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
+	border-radius: 10px;
+	background-color:green;
+	position:absolute;
+	top:40px;
+	
+}
+#card img {
+  display: block;
+  width: 180px;
+  max-height: 200px;
+  position: relative;
+  margin: 20px auto;
+}
+.hp {
+  width: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 8px 0;
+  border-radius: 30px;
+  margin-left: auto;
+  font-weight: 400;
+}
+.poke-name {
+  text-align: center;
+  font-weight: 600;
+}
+.types {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0 40px 0;
+}
+.hp span,
+.types span {
+  font-size: 12px;
+  letter-spacing: 0.4px;
+  font-weight: 600;
+}
+.types span {
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+.stats p {
+  color: #404060;
+}
+#btn {
+  display: block;
+  padding: 15px 60px;
+  font-size: 18px;
+  background-color: #101010;
+  color: #ffffff;
+  position: relative;
+  margin: 30px auto;
+  border: none;
+  border-radius: 5px;
+}
+
+
+

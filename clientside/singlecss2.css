@@ -1,0 +1,285 @@
+body{
+	background-color:transparent;
+	width:350px;
+	height:800px;
+	
+	max-height:800px;
+	min-height:750px;
+	max-width:420px;
+	
+	overflow-y: hidden; /* Hide vertical scrollbar */
+	overflow-x: hidden; /* Hide horizontal scrollbar */
+	background-color:black;
+	margin:0px;
+
+}
+.sp{
+font-size:25px;
+font-family: 'Righteous', cursive;
+text-transform:uppercase;
+left:50%;
+padding:10px; 
+top:50%;
+font-size:40px; 
+background-color:white;
+color:red;
+position:fixed;
+display:none;
+
+}
+Button {
+  background: #c1d72e;
+  border-radius: 5px;
+  border: solid 1px white;
+  color: black;
+  width: 25px;
+  height: 30px;
+  margin: 0 10px 10px 0;
+  outline: none;
+
+  
+}
+Button:hover {
+  transition: 0.5s;
+  background: white;
+  border: solid 1px white;
+  color: #c1d72e;
+}
+
+.selected {
+  background: white;
+  border: solid 1px white;
+  color: #c1d72e;
+}
+
+
+.special{
+
+	overflow:hidden;
+	wrap:auto;and horizontally */
+	position: absolute;
+	top:10px;
+	left:0px;
+	margin: -25px 0 0 -25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	padding:20px;
+	color:white;
+	font-size:24px;
+	background-color:white;
+
+  }
+
+.info{
+top:0;
+right:15px;
+padding:100px;
+border-radius: 25px;
+float:right;
+position: fixed;
+background-color:white;
+color:black;
+width:150px;
+height:150px;
+text-align:center;
+font-family: 'Josefin Sans', sans-serif;
+font-weight: bolder;
+display:none;
+
+}
+
+
+
+.fade-in-image { animation: fadeIn 5s; }
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.superMsg{
+	display: block;
+	color:red;
+	font-weight:bolder;
+	border: 2px solid black;
+	border-radius: 5px;
+
+}
+.spots{
+
+
+	padding:20px;
+	font-size:40px;
+	left:10;
+	top:85%;
+	position:absolute;
+	text-align:center;
+	font-family: 'Josefin Sans', 'sans-serif';
+	text-transform:uppercase;
+	font-weight:bolder;
+	border-style: solid;
+	border-color:white;
+	border-radius:24px;
+	color:red;
+	width:55%;
+
+}
+
+
+/* Custom width for the Scrollbar */
+::-webkit-scrollbar {
+width: 18px;
+}
+/* Custom Track */
+::-webkit-scrollbar-track {
+box-shadow: inset 0 0 5px white;
+border-radius: 10px;
+background: green;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: white;
+border-radius: 10px;
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: white;
+}
+/* Custom Button */
+::-webkit-scrollbar-button:single-button {
+background-color:none;
+display: block;
+border-style: solid;
+height: 13px;
+width: 16px;
+}
+/* Custom Up Direction Button */
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+border-width: 0px 8px 9px 8px;
+border-color: transparent #881;
+border-radius: 10px;
+}
+/* Custom Down Direction Button */
+::-webkit-scrollbar-button:single-button:vertical:increment {
+border-width: 0px 8px 9px 8px;
+border-color: transparent #881;
+border-radius: 10px;
+}
+
+
+
+
+
+
+.chat
+{
+	padding-right:5px;
+	overflow-wrap: break-word;
+	top:0px;
+	background-color:transparent;
+	left:0px;
+	padding-left:20px;
+	color:black;
+	height:98%;
+	width:590px;
+	font-size:20px;
+	overflow-x:auto;
+	font-weight: bolder;
+	overflow-anchor: bottom;
+	position:relative;
+	overflow-y: scroll; /* Hide vertical scrollbar */
+	scrollbar-color:green black;
+	border-width:8px; 
+	border-color:green;
+	border-style:solid;
+	border-radius:30px;
+	overflow-x:hidden;
+
+}
+
+.gifts{
+color:red;
+float:center; 
+
+}
+.info2{
+	font-family: 'Josefin Sans', sans-serif;
+	font-weight: bolder;
+	font-size:25px;
+	top:300px;
+	left:30px;
+
+}
+  input,button{
+  font-size:20px;
+  color:white;
+  width:200px;
+  float:center;
+  border-radius: 12px;
+  background-color:green;
+  text-align:center;
+  
+}
+  
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+img{
+	border-radius: 4px;
+	width:100px;
+	height:100px;
+
+}
+#myBtn:hover {
+	background-color: #555;
+	
+	}
+.chatwindow{
+	height:975px;
+	width:800px;
+	position:absolute;
+	overflow:hidden;
+  }
+  
+  .introWindows{
+  position:fixed;
+  
+  padding-top:10px;
+  color:white;;
+
+	left:50%;
+	top:25%;
+	width:300px;
+  border: 1px solid;
+
+  box-shadow: 5px 10px green;
+  border-radius: 4px;
+  }
+  .img2{
+  width:100px;
+  height:100px;
+  border-radius: 4px;
+  }
+  
+  .timercountdown{
+      /* text-align: center; */
+    border: 5px solid #004853;
+    display:inline;
+    padding: 5px;
+    color: white;
+    font-family: Verdana, sans-serif, Arial;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+	
+  }

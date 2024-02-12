@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>
+Spotify Tools 
+</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Playfair+Display&family=Russo+One&display=swap" rel="stylesheet">
+
+<style>
+.playlist{
+			width:500px;
+			height:400px;
+			top:20px;
+			left:200px;
+			display: flex;
+			flex-wrap:wrap;
+			align-items:center;
+}
+a{
+			text-decoration:none;
+			text-align:center;
+			justify-content: center;
+}
+.song{
+			padding: 4px 4px;
+			margin: 5px;
+			align-items:center;
+			line-height: 5px;
+			font-size: 30px;
+}
+.thumbnail{
+
+
+}
+img{
+		width:50%;
+		height:50%;
+		align:center;
+		margin-top: 8px;
+		vertical-align: middle;
+		padding:10px;
+
+}
+ a {
+		text-align:bottom;
+		font-size:25px;
+		color:purple;
+		
+		font-family: 'Russo One', sans-serif;
+
+}
+div{
+
+
+}
+</style>
+</head>
+<body>
+<div id="playlist" class="playlist">
+
+</div>
+<script>
+setInterval(showSongs(), 2000);
+var playlistDiv = document.getElementById("playlist")
+async function showSongs() {
+  const response = await fetch("http://localhost:3050/showList");
+  const songs = await response.json();
+ checkSong(songs.tracks.items);  
+  
+}
+async function checkSong(songs){
+var xy= 0;  
+var output=""; 
+while(xy < songs.length){
+
+	var SongImg= songs[xy].track.album.images[0].url;
+	var SongName=songs[xy].track.name
+	var SongUri= songs[xy].track.uri
+	var temp = "<div class=song><div class=thumbnail><img style='width:100px;height:100px;'src='"+ SongImg+"'/></div><div class=songName><a href="+SongUri+">"+"</a></div></div>";
+	// console.log(SongImg);
+	 
+	 output=output+ temp; 
+xy++;
+
+}
+playlistDiv.innerHTML = output;
+
+}
+
+
+</script>
+</body>
+</html>
