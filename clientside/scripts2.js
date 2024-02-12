@@ -61,7 +61,7 @@ function cleanUp(dirtytext){
 var i =0; 
 
 let text = dirtytext;
-let cleanText = text.replace(/innocent|covid|virus|overweight|ugly|facebook|feet/gi, "**** "); 
+let cleanText = text.replace(/blockedwordlist, "**** "); 
 
 
 
