@@ -467,8 +467,8 @@ console.log("in display chat");
 		}
 		else{
 			console.log("Getting data from default"); 
-		FetchEvent(51919855);
-		hostID=51919855
+		FetchEvent(0);
+		hostID=0;
 		}
 		
 
@@ -479,7 +479,7 @@ StartChatKick(second);
 }
 //var chatview = document.getElementById("chat")
 function StartChatKick(ids){
-var kick_id = 460187; //roxxies 
+var kick_id = 0; //roxxies 
 if(ids >0 ){
 kick_id=ids;
 
