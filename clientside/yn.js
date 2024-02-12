@@ -2,7 +2,7 @@
 // Make sure everyone  all chat  are claered 
 
 var jsonInfoData =0;
-var customColors=[50446895,'#FF10F0'];
+var customColors=[0,'#FF10F0'];
 var defaultpng ="<img src='purple.png' style='width:25px;height:25px;border-radius:25px;vertical-align:middle'/>";
 var SubBadge="https://ynassets.younow.com/subscriptionsTiers/usersAssets/live/"
 var hostID; 
